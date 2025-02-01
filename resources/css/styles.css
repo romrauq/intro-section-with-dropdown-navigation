@@ -13,19 +13,42 @@
 	src: url("../fonts/Epilogue-VariableFont_wght.ttf");
 }
 body {
+	font-size: 18px;
+	font-family: Epilogue;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+	background-color: var(--almost-white);
 }
 header {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 20px 0 0;
 }
 .left-nav-items {
+	display: flex;
+	align-items: center;
+	gap: 80px;
 }
 .page-links {
+	display: flex;
+	gap: 40px;
 }
 .link-item {
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 .link-text {
+	color: var(--medium-gray);
+	text-decoration: none;
+	transition: 0.3s;
+}
+.link-text:hover {
+	color: var(--almost-black);
 }
 .arrow {
 }
@@ -34,30 +57,90 @@ header {
 .arrow-up {
 }
 .right-nav-items {
+	display: flex;
+	gap: 10px;
 }
 .button {
 }
 .login-button {
+	color: var(--medium-gray);
+	font-family: Epilogue;
+	font-weight: 600;
+	padding: 15px 20px;
+	border: none;
+	background-color: var(--almost-white);
+}
+.login-button:hover {
+	color: var(--almost-black);
 }
 .register-button {
+	color: var(--medium-gray);
+	font-family: Epilogue;
+	font-weight: 600;
+	padding: 15px 20px;
+	width: fit-content;
+	background-color: var(--almost-white);
+	border: 2px solid var(--medium-gray);
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.register-button:hover {
+	color: var(--almost-black);
+	border: 2px solid var(--almost-black);
 }
 main {
-}
-.right-column {
-}
-.heading-text {
-}
-.description-text {
-}
-.learn-more-button {
-}
-.affiliates-row {
-}
-.affiliate-image {
+	display: flex;
+	width: fit-content;
 }
 .left-column {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	color: var(--almost-black);
+}
+
+.heading-text {
+	font-size: 50px;
+}
+.description-text {
+	font-weight: 500;
+	color: var(--medium-gray);
+	line-height: 30px;
+}
+.learn-more-button {
+	color: var(--almost-white);
+	font-family: Epilogue;
+	font-weight: 600;
+	padding: 15px 30px;
+	margin: 0 0 80px 0;
+	width: fit-content;
+	background-color: var(--almost-black);
+	border: 1px solid var(--almost-black);
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.learn-more-button:hover {
+	color: var(--almost-black);
+	background-color: var(--almost-white);
+}
+.affiliates-row {
+	display: flex;
+	gap: 30px;
+}
+.affiliate-image {
+	height: 20px;
+}
+.right-column {
+	background-image: url("../images/image-hero-desktop.png");
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 420px;
 }
 .attribution {
+	margin: auto 0 2px 0;
 	font-size: 11px;
 	text-align: center;
 }
