@@ -1,0 +1,66 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--almost-white: hsl(0, 0%, 98%);
+	--medium-gray: hsl(0, 0%, 41%);
+	--almost-black: hsl(0, 0%, 8%);
+}
+@font-face {
+	font-family: Epilogue;
+	src: url("../fonts/Epilogue-VariableFont_wght.ttf");
+}
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+header {
+}
+.left-nav-items {
+}
+.page-links {
+}
+.link-item {
+}
+.link-text {
+}
+.arrow {
+}
+.arrow-down {
+}
+.arrow-up {
+}
+.right-nav-items {
+}
+.button {
+}
+.login-button {
+}
+.register-button {
+}
+main {
+}
+.right-column {
+}
+.heading-text {
+}
+.description-text {
+}
+.learn-more-button {
+}
+.affiliates-row {
+}
+.affiliate-image {
+}
+.left-column {
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
