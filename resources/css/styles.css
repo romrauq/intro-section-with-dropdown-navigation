@@ -50,11 +50,10 @@ header {
 .link-text:hover {
 	color: var(--almost-black);
 }
-.arrow {
-}
-.arrow-down {
-}
+/* .arrow {
+} */
 .arrow-up {
+	display: none;
 }
 .right-nav-items {
 	display: flex;
