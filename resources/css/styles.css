@@ -150,3 +150,97 @@ main {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+@media (max-width: 475px) {
+	body {
+		gap: 20px;
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+		margin: 30px 0 0 0;
+	}
+	.left-nav-items {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+	}
+	.page-links {
+		display: none;
+	}
+	.right-nav-items {
+		display: none;
+	}
+	.login-button {
+		color: var(--medium-gray);
+		font-family: Epilogue;
+		font-weight: 600;
+		padding: 15px 20px;
+		border: none;
+		background-color: var(--almost-white);
+	}
+	.login-button:hover {
+		color: var(--almost-black);
+	}
+	.register-button {
+		color: var(--medium-gray);
+		font-family: Epilogue;
+		font-weight: 600;
+		padding: 15px 20px;
+		width: fit-content;
+		background-color: var(--almost-white);
+		border: 2px solid var(--medium-gray);
+		border-radius: 10px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	.register-button:hover {
+		color: var(--almost-black);
+		border: 2px solid var(--almost-black);
+	}
+	.burger-menu-button {
+		display: block;
+		border: none;
+		background-color: var(--almost-white);
+	}
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+		width: fit-content;
+		width: 90%;
+	}
+	.right-column {
+		background-image: url("../images/image-hero-mobile.png");
+		background-position: top;
+		background-size: contain;
+		height: 290px;
+		width: 100%;
+	}
+	.left-column {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		color: var(--almost-black);
+		margin: 0 0 30px 0;
+	}
+	.heading-text {
+		font-size: 40px;
+	}
+	.description-text {
+		line-height: 30px;
+	}
+	.learn-more-button {
+		font-size: 18px;
+		margin: 0 auto 40px;
+	}
+	.affiliates-row {
+		align-items: center;
+		justify-content: space-between;
+		gap: 0;
+		width: 100%;
+	}
+	.affiliate-image {
+		height: 15px;
+	}
+}
