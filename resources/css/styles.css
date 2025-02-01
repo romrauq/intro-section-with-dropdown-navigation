@@ -60,8 +60,8 @@ header {
 	display: flex;
 	gap: 10px;
 }
-.button {
-}
+/* .button {
+} */
 .login-button {
 	color: var(--medium-gray);
 	font-family: Epilogue;
@@ -88,6 +88,9 @@ header {
 .register-button:hover {
 	color: var(--almost-black);
 	border: 2px solid var(--almost-black);
+}
+.burger-menu-button {
+	display: none;
 }
 main {
 	display: flex;
