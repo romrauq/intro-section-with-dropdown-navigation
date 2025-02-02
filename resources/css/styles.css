@@ -264,6 +264,11 @@ main {
 		border: none;
 		background-color: var(--almost-white);
 	}
+	.close-menu-button {
+		display: none;
+		border: none;
+		background-color: var(--almost-white);
+	}
 	main {
 		display: flex;
 		flex-direction: column-reverse;
