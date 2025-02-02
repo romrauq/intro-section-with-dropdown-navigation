@@ -150,7 +150,7 @@ header {
 	color: var(--almost-black);
 	border: 2px solid var(--almost-black);
 }
-.burger-menu-button {
+.side-menu-container {
 	display: none;
 }
 main {
@@ -268,6 +268,9 @@ main {
 		display: none;
 		border: none;
 		background-color: var(--almost-white);
+	}
+	.side-menu-container {
+		display: flex;
 	}
 	main {
 		display: flex;
