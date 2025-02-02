@@ -37,6 +37,56 @@ header {
 	display: flex;
 	gap: 40px;
 }
+.link-item-dropdown {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+.dropdown-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: absolute;
+	padding: 30px;
+	margin: 30px 0 0 0;
+	background-color: var(--almost-white);
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	display: none;
+}
+.features-dropdown {
+	align-self: flex-end;
+}
+.dropdown-item {
+	display: flex;
+	align-items: center;
+}
+.dropdown-icon {
+	height: 15px;
+	width: 15px;
+}
+.dropdown-item a {
+	color: var(--medium-gray);
+	text-decoration: none;
+}
+.dropdown-item a:hover {
+	color: var(--almost-black);
+}
+.company-dropdown {
+	align-self: flex-start;
+}
+.company-dropdown a {
+	color: var(--medium-gray);
+	text-decoration: none;
+}
+.company-dropdown a:hover {
+	color: var(--almost-black);
+}
+.dropdown-item {
+	display: flex;
+	gap: 10px;
+}
 .link-item {
 	display: flex;
 	align-items: center;
