@@ -22,6 +22,14 @@ body {
 	gap: 80px;
 	background-color: var(--almost-white);
 }
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(6, 0, 0, 0.5);
+	z-index: 5;
+	display: none;
+}
 header {
 	display: flex;
 	justify-content: space-between;
@@ -37,7 +45,7 @@ header {
 	display: flex;
 	gap: 40px;
 }
-.link-item-dropdown {
+.dropdown-column {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -49,10 +57,10 @@ header {
 	gap: 5px;
 }
 .dropdown-container {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	position: absolute;
 	padding: 30px;
 	margin: 30px 0 0 0;
 	background-color: var(--almost-white);
@@ -213,24 +221,11 @@ main {
 }
 @media (max-width: 475px) {
 	body {
-		gap: 20px;
+		gap: 0;
 	}
 	header {
 		display: flex;
-		justify-content: space-between;
-		width: 90%;
-		margin: 30px 0 0 0;
-	}
-	.left-nav-items {
-		display: flex;
-		align-items: center;
-		gap: 80px;
-	}
-	.page-links {
-		display: none;
-	}
-	.right-nav-items {
-		display: none;
+		margin: 0;
 	}
 	.login-button {
 		color: var(--medium-gray);
@@ -243,22 +238,6 @@ main {
 	.login-button:hover {
 		color: var(--almost-black);
 	}
-	.register-button {
-		color: var(--medium-gray);
-		font-family: Epilogue;
-		font-weight: 600;
-		padding: 15px 20px;
-		width: fit-content;
-		background-color: var(--almost-white);
-		border: 2px solid var(--medium-gray);
-		border-radius: 10px;
-		transition: 0.3s;
-		cursor: pointer;
-	}
-	.register-button:hover {
-		color: var(--almost-black);
-		border: 2px solid var(--almost-black);
-	}
 	.burger-menu-button {
 		display: block;
 		border: none;
@@ -268,9 +247,6 @@ main {
 		display: none;
 		border: none;
 		background-color: var(--almost-white);
-	}
-	.side-menu-container {
-		display: flex;
 	}
 	main {
 		display: flex;
