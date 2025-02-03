@@ -10,108 +10,96 @@
 	</head>
 
 	<body>
+		<div class="overlay" id="overlay"></div>
 		<header>
-			<div class="left-nav-items">
-				<img src="./resources/images/logo.svg" alt="" />
+			<img src="./resources/images/logo.svg" alt="" class="logo-image" />
 
-				<div class="page-links">
-					<div class="dropdown-column">
-						<div class="dropdown-links-row">
-							<button class="link-text link-text-button" id="features-link">Features</button>
-							<img
-								src="./resources/images/icon-arrow-down.svg"
-								alt=""
-								class="arrow"
-								id="features-arrow-down"
-							/>
-							<img
-								src="./resources/images/icon-arrow-up.svg"
-								alt=""
-								class="arrow arrow-up"
-								id="features-arrow-up"
-							/>
-						</div>
+			<button class="burger-menu-button" id="burger-menu-button">
+				<img src="./resources/images/icon-menu.svg" alt="" />
+			</button>
+			<div class="page-links" id="side-menu-container">
+				<div class="menu-buttons-container" id="menu-buttons-container">
+					<button class="close-menu-button" id="close-menu-button">
+						<img src="./resources/images/icon-close-menu.svg" alt="" />
+					</button>
+				</div>
 
-						<div
-							class="dropdown-container features-dropdown"
-							id="features-dropdown-container"
-						>
-							<div class="dropdown-item">
-								<img src="./resources/images/icon-todo.svg" alt="" class="dropdown-icon" />
-								<a href="">Todo List</a>
-							</div>
-							<div class="dropdown-item">
-								<img
-									src="./resources/images/icon-calendar.svg"
-									alt=""
-									class="dropdown-icon"
-								/>
-								<a href="">Calender</a>
-							</div>
-							<div class="dropdown-item">
-								<img
-									src="./resources/images/icon-reminders.svg"
-									alt=""
-									class="dropdown-icon"
-								/>
-								<a href="">Reminders</a>
-							</div>
-							<div class="dropdown-item">
-								<img
-									src="./resources/images/icon-planning.svg"
-									alt=""
-									class="dropdown-icon"
-								/>
-								<a href="">Planning</a>
-							</div>
-						</div>
+				<div class="dropdown-column">
+					<div class="dropdown-links-row">
+						<button class="link-text link-text-button" id="features-link">Features</button>
+						<img
+							src="./resources/images/icon-arrow-down.svg"
+							alt=""
+							class="arrow"
+							id="features-arrow-down"
+						/>
+						<img
+							src="./resources/images/icon-arrow-up.svg"
+							alt=""
+							class="arrow arrow-up"
+							id="features-arrow-up"
+						/>
 					</div>
 
-					<div class="dropdown-column">
-						<div class="dropdown-links-row">
-							<button class="link-text link-text-button" id="company-link">Company</button>
-							<img
-								src="./resources/images/icon-arrow-down.svg"
-								alt=""
-								class="arrow"
-								id="company-arrow-down"
-							/>
-							<img
-								src="./resources/images/icon-arrow-up.svg"
-								alt=""
-								class="arrow arrow-up"
-								id="company-arrow-up"
-							/>
+					<div class="dropdown-container features-dropdown" id="features-dropdown-container">
+						<div class="dropdown-item">
+							<img src="./resources/images/icon-todo.svg" alt="" class="dropdown-icon" />
+							<a href="">Todo List</a>
 						</div>
-						<div class="dropdown-container company-dropdown" id="company-dropdown-container">
-							<div class="dropdown-item"><a href="">History</a></div>
-							<div class="dropdown-item"><a href="">Our Team</a></div>
-							<div class="dropdown-item"><a href="">Blog</a></div>
+						<div class="dropdown-item">
+							<img src="./resources/images/icon-calendar.svg" alt="" class="dropdown-icon" />
+							<a href="">Calender</a>
 						</div>
-					</div>
-
-					<div class="link-item">
-						<a href="" class="link-text">Careers</a>
-					</div>
-
-					<div class="link-item">
-						<a href="" class="link-text">About</a>
+						<div class="dropdown-item">
+							<img
+								src="./resources/images/icon-reminders.svg"
+								alt=""
+								class="dropdown-icon"
+							/>
+							<a href="">Reminders</a>
+						</div>
+						<div class="dropdown-item">
+							<img src="./resources/images/icon-planning.svg" alt="" class="dropdown-icon" />
+							<a href="">Planning</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="right-nav-items">
-				<button class="button login-button">Login</button>
-				<button class="button register-button">Register</button>
-			</div>
+				<div class="dropdown-column">
+					<div class="dropdown-links-row">
+						<button class="link-text link-text-button" id="company-link">Company</button>
+						<img
+							src="./resources/images/icon-arrow-down.svg"
+							alt=""
+							class="arrow"
+							id="company-arrow-down"
+						/>
+						<img
+							src="./resources/images/icon-arrow-up.svg"
+							alt=""
+							class="arrow arrow-up"
+							id="company-arrow-up"
+						/>
+					</div>
+					<div class="dropdown-container company-dropdown" id="company-dropdown-container">
+						<div class="dropdown-item"><a href="">History</a></div>
+						<div class="dropdown-item"><a href="">Our Team</a></div>
+						<div class="dropdown-item"><a href="">Blog</a></div>
+					</div>
+				</div>
 
-			<div class="side-menu-container" id="side-menu-container">
-				<button class="burger-menu-button" id="burger-menu-button">
-					<img src="./resources/images/icon-menu.svg" alt="" />
-				</button>
-				<button class="close-menu-button" id="close-menu-button">
-					<img src="./resources/images/icon-close-menu.svg" alt="" />
-				</button>
+				<div class="link-item">
+					<a href="" class="link-text">Careers</a>
+				</div>
+
+				<div class="link-item">
+					<a href="" class="link-text">About</a>
+				</div>
+
+				<div class="nav-buttons-container">
+					<button class="button login-button">Login</button>
+					<button class="button register-button">Register</button>
+				</div>
 			</div>
 		</header>
 

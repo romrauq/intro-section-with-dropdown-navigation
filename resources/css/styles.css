@@ -29,21 +29,26 @@ body {
 	background-color: rgba(6, 0, 0, 0.5);
 	z-index: 5;
 	display: none;
+	/* transition: 0.4s; */
 }
 header {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
 	width: 90%;
 	margin: 20px 0 0;
 }
-.left-nav-items {
-	display: flex;
-	align-items: center;
-	gap: 80px;
+.logo-image {
+	margin: 0 80px 0 0;
 }
 .page-links {
 	display: flex;
+	align-items: center;
 	gap: 40px;
+	width: 100%;
+	transition: 0.7s;
+}
+.menu-buttons-container {
+	display: none;
 }
 .dropdown-column {
 	display: flex;
@@ -120,17 +125,14 @@ header {
 .link-text:hover {
 	color: var(--almost-black);
 }
-/* .arrow {
-} */
 .arrow-up {
 	display: none;
 }
-.right-nav-items {
+.nav-buttons-container {
 	display: flex;
 	gap: 10px;
+	margin: 0 0 0 auto;
 }
-/* .button {
-} */
 .login-button {
 	color: var(--medium-gray);
 	font-family: Epilogue;
@@ -158,7 +160,7 @@ header {
 	color: var(--almost-black);
 	border: 2px solid var(--almost-black);
 }
-.side-menu-container {
+.menu-buttons-container {
 	display: none;
 }
 main {
@@ -227,18 +229,19 @@ main {
 		display: flex;
 		margin: 0;
 	}
-	.login-button {
-		color: var(--medium-gray);
-		font-family: Epilogue;
-		font-weight: 600;
-		padding: 15px 20px;
-		border: none;
-		background-color: var(--almost-white);
+	.logo-image {
+		position: absolute;
+		top: 20px;
+		left: 5%;
 	}
-	.login-button:hover {
-		color: var(--almost-black);
+	.menu-buttons-container {
+		display: block;
+		margin: 0 0 0 auto;
 	}
 	.burger-menu-button {
+		position: fixed;
+		top: 20px;
+		right: 5%;
 		display: block;
 		border: none;
 		background-color: var(--almost-white);
@@ -248,6 +251,30 @@ main {
 		border: none;
 		background-color: var(--almost-white);
 	}
+	.page-links {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		padding: 20px;
+		gap: 40px;
+		width: 70%;
+		height: 100vh;
+		background-color: var(--almost-white);
+		z-index: 10;
+	}
+	.nav-buttons-container {
+		flex-direction: column;
+		gap: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.button {
+		width: 100%;
+		border-radius: 15px;
+	}
 	main {
 		display: flex;
 		flex-direction: column-reverse;
@@ -255,6 +282,7 @@ main {
 		width: 90%;
 	}
 	.right-column {
+		margin: 70px 0 0 0;
 		background-image: url("../images/image-hero-mobile.png");
 		background-position: top;
 		background-size: contain;
