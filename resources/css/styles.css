@@ -29,7 +29,6 @@ body {
 	background-color: rgba(6, 0, 0, 0.5);
 	z-index: 5;
 	display: none;
-	/* transition: 0.4s; */
 }
 header {
 	display: flex;
@@ -46,6 +45,9 @@ header {
 	gap: 40px;
 	width: 100%;
 	transition: 0.7s;
+}
+.burger-menu-button {
+	display: none;
 }
 .menu-buttons-container {
 	display: none;
@@ -234,6 +236,7 @@ main {
 		top: 20px;
 		left: 5%;
 	}
+
 	.menu-buttons-container {
 		display: block;
 		margin: 0 0 0 auto;
@@ -254,7 +257,7 @@ main {
 	.page-links {
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: -70%;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
@@ -264,6 +267,22 @@ main {
 		height: 100vh;
 		background-color: var(--almost-white);
 		z-index: 10;
+	}
+	.dropdown-column {
+		align-items: baseline;
+		gap: 0;
+	}
+	.dropdown-container {
+		position: relative;
+		gap: 40px;
+		padding: 0 0 0 30px;
+		margin: 20px 0 0 0;
+		box-shadow: none;
+		border-radius: 0;
+		display: none;
+	}
+	.features-dropdown {
+		align-self: baseline;
 	}
 	.nav-buttons-container {
 		flex-direction: column;
