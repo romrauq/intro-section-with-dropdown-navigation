@@ -15,6 +15,7 @@ features_link.addEventListener("click", (event) => {
 
 // Remove features dropdown container when user clicks outside of dropdown container:
 document.addEventListener("click", (event) => {
+	event.preventDefault();
 	if (!features_dropdown.contains(event.target) && event.target !== features_link) {
 		features_dropdown.style.display = "none";
 	}
@@ -28,19 +29,22 @@ company_link.addEventListener("click", (event) => {
 
 // Remove company dropdown container when user clicks outside of dropdown container:
 document.addEventListener("click", (event) => {
+	event.preventDefault();
 	if (!company_dropdown.contains(event.target) && event.target !== company_link) {
 		company_dropdown.style.display = "none";
 	}
 });
 
-burger_menu_button.addEventListener("click", () => {
+burger_menu_button.addEventListener("click", (event) => {
+	event.preventDefault();
 	burger_menu_button.style.display = "none";
 	close_menu_button.style.display = "block";
 	overlay.style.display = "block";
 	side_menu_container.style.right = "0";
 });
 
-close_menu_button.addEventListener("click", () => {
+close_menu_button.addEventListener("click", (event) => {
+	event.preventDefault();
 	close_menu_button.style.display = "none";
 	burger_menu_button.style.display = "block";
 	overlay.style.display = "none";
