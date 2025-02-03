@@ -178,11 +178,13 @@ main {
 
 .heading-text {
 	font-size: 50px;
+	width: 300px;
 }
 .description-text {
 	font-weight: 500;
 	color: var(--medium-gray);
 	line-height: 30px;
+	width: 520px;
 }
 .learn-more-button {
 	color: var(--almost-white);
@@ -317,10 +319,11 @@ main {
 		margin: 0 0 30px 0;
 	}
 	.heading-text {
-		font-size: 40px;
+		font-size: 30px;
+		width: 100%;
 	}
 	.description-text {
-		line-height: 30px;
+		width: 100%;
 	}
 	.learn-more-button {
 		font-size: 18px;
